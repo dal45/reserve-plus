@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserve+ | Restaurant Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/restauranthp.css">
+</head>
+<body class="dashboard-body">
+  <!-- Top bar -->
+  <header class="site-header">
+    <div class="logo">Reserve<span>+</span></div>
+    <nav class="main-nav">
+      <span class="user-label">Logged in as: <strong>Restaurant Owner</strong></span>
+      <a href="customerhp.html">Customer View</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-main">
+    <!-- Left sidebar -->
+    <aside class="dashboard-sidebar">
+      <h2 class="sidebar-title">My Restaurant</h2>
+      <ul class="sidebar-menu">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Waitlist</a></li>
+        <li><a href="#">Tables & Layout</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <section class="dashboard-content">
+      <!-- Stats cards -->
+      <section class="stats-grid">
+        <article class="stat-card">
+          <h3>Reservations Today</h3>
+          <p class="stat-number">18</p>
+          <p class="stat-label">4 pending check-ins</p>
+        </article>
+
+        <article class="stat-card">
+          <h3>Guests Seated</h3>
+          <p class="stat-number">46</p>
+          <p class="stat-label">Avg. party size: 3</p>
+        </article>
+
+        <article class="stat-card">
+          <h3>Current Wait Time</h3>
+          <p class="stat-number">20 min</p>
+          <p class="stat-label">For parties of 2–4</p>
+        </article>
+      </section>
+
+      <!-- Today’s reservations table -->
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Today&rsquo;s Reservations</h2>
+          <button class="btn-primary small">Add Reservation</button>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Guest Name</th>
+                <th>Party</th>
+                <th>Status</th>
+                <th>Table</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6:00 PM</td>
+                <td>Alex Johnson</td>
+                <td>2</td>
+                <td><span class="badge badge-pending">Arriving Soon</span></td>
+                <td>Table 5</td>
+              </tr>
+              <tr>
+                <td>6:30 PM</td>
+                <td>Maria Lopez</td>
+                <td>4</td>
+                <td><span class="badge badge-seated">Seated</span></td>
+                <td>Table 2</td>
+              </tr>
+              <tr>
+                <td>7:00 PM</td>
+                <td>David Kim</td>
+                <td>3</td>
+                <td><span class="badge badge-waiting">On Waitlist</span></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>7:30 PM</td>
+                <td>Jordan Smith</td>
+                <td>6</td>
+                <td><span class="badge badge-confirmed">Confirmed</span></td>
+                <td>Table 8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Waitlist panel -->
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Live Waitlist</h2>
+          <button class="btn-secondary small">View All</button>
+        </div>
+
+        <ul class="waitlist-list">
+          <li>
+            <span class="wait-name">Taylor P.</span>
+            <span class="wait-meta">Party of 2 · Est. 10 min</span>
+          </li>
+          <li>
+            <span class="wait-name">Nguyen Family</span>
+            <span class="wait-meta">Party of 5 · Est. 25 min</span>
+          </li>
+          <li>
+            <span class="wait-name">Sam &amp; Chris</span>
+            <span class="wait-meta">Party of 2 · Est. 15 min</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
