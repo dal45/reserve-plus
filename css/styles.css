@@ -1,0 +1,251 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #222;
+  background-color: #faf6f0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header / Navbar */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1b1b1f;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #f5a623; /* gold accent */
+}
+
+.main-nav a {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+}
+
+.main-nav a.active {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-nav {
+  background: #f5a623;
+  color: #1b1b1f;
+  font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #f5a623;
+  color: #1b1b1f;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #444;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.btn-secondary:hover {
+  background: #fff7eb;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+/* Features */
+.features {
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #fff8ee;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  background: #1b1b1f;
+  color: #aaa;
+}
+
+/* Login page */
+.login-body {
+  min-height: 100vh;
+  background: #000;
+  background-image: url("../img/reserve-login-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.login-overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.login-logo {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #1b1b1f;
+}
+
+.login-logo span {
+  color: #f5a623;
+}
+
+.login-tagline {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  color: #444;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #f5a623;
+  box-shadow: 0 0 0 2px rgba(245, 166, 35, 0.2);
+}
+
+.login-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  color: #666;
+}
+
+.login-links a {
+  color: #c17c1f;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    padding: 4rem 5rem;
+  }
+}
